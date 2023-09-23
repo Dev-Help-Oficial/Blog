@@ -5,7 +5,9 @@ metaDesc: 'cpp, c++, c, javascript, js, programacao, programação, code, hackto
 date: '9-9-2023'
 socialImage: 'images/memorymanagement.png'
 tags:
-  - nextjs
+  - cpp
+  - c
+  - memory
 ---
 Gerenciamento de Memória: Noção básica
 
