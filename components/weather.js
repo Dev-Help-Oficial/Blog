@@ -43,7 +43,7 @@ function Weather() {
 
   return (
     <div>
-      <Tooltip title='Weather' arrow>
+      <Tooltip title='Clima' arrow>
       <p className='cursor-default select-none'>{weatherIcon} {temperature}°C</p>
       </Tooltip>
     </div>
