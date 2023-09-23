@@ -1,0 +1,91 @@
+---
+title: 'Aula | Entendendo condicionais'
+metaTitle: 'Condições: if e else'
+metaDesc: 'cpp, c++, c, javascript, js, programacao, programação, code, hacktoberfest, github, youtube, how to code'
+date: '9-9-2023'
+socialImage: 'images/conditionals.png'
+tags:
+  - nextjs
+---
+
+As condicionais são de extrema importância em qualquer linguagem de programação, com elas você pode verificar se certas condições são falsas ou verdadeiras.
+
+Os operadores condicionais que iremos abordar nessa aula são: if e else.
+
+Tópicos:
+1. if = Se;
+2. else = Senão.
+
+*  **if**
+    Começaremos pelo talvez mais usado, que é o if.
+
+    O operador condicional `if` pode ser usado para verificar se uma condição é verdadeira ou não.
+
+    Exemplo(C):
+
+    ```c
+    #include <stdio.h> // Inclui a stdio(Standard input and output) saída e entrada padrão, include padrão em C
+
+    int main() /* Inicializa a função main(principal) */ {
+        int i; // Define a variável 'i' do tipo int(inteiro)
+
+        while(i < 15) {
+            i++; /* Enquanto a variável 'i' for menor que 15, continua acrescentando +1 na variável */
+        }
+
+        if(i >= 15) /* Se a variável 'i' for maior(>) ou igual(=) à 15, retorna o código dentro das chaves(escopo {}) que no caso é um printf, função para escrever uma mensagem no console. */ {
+            printf("i é maior ou igual à 15.");
+        }
+        return 0; // Retorna 0 para a função 'main' após o código dentro da função ser executado
+    }
+    ```
+
+    O que nós fizemos acima é um exemplo básico de uma condicional if, na condicional usamos o operador >= que é basicamente caso for maior ou igual ao número 15, faz algo.
+
+    Mas também poderíamos usar diversos operadores lógicos, abaixo deixarei uma tabela com os operadores lógicos e uma breve descrição sobre eles.
+
+    ---
+    1. `>` - Maior que
+    2. `<` - Menor que
+    3. `==` - Igual
+    4. `>=` Maior ou igual a
+    ---
+
+    Todos os operadores lógicos acima estão disponíveis na linguagem C e C++ e em diversas outras linguagens como Java, Javascript, C#, entre outras.
+
+    * **else**
+    O operador condicional `else` depois do `if` é o que você mais vai utilizar em um programa.
+
+    O operador `else` ele faz o contrário de uma verificação `if`, ficou confuso(a)? Não se preocupe, pois a lógica é bem simples, aqui vai um exemplo:
+
+    ```c
+    #include <stdio.h> // Inclui a include stdio(Standard input and output) include padrão em C
+
+    int main() /* Incializa a função main(principal) */ {
+        int i; // Cria a variável 'i' do tipo int(inteiro)
+
+        while(i < 15) {
+            i++ // Enquanto a variável 'i' for menor que 15, continua acrescentando +1 à seu valor
+        }
+
+        if(i > 15) /* Se a variável 'i' for maior(>) ou igual(=) à 15, retorna o código dentro das chaves(escopo {}) que no caso é um printf, função para escrever uma mensagem no console. */ {
+            printf("A variável 'i' é maior que 15!");
+        }
+        else /* Senão for maior que 15, ou seja, caso for qualquer valor que não seja 15, faz algo dentro do escopo(Código dentro das chaves {}) */ {
+            printf("A variável 'i' não é maior que 15.");
+        } 
+        return 0; // Retorna 0 para a função 'main' após a execução de seu código
+    }
+    ```
+
+    Aqui usamos o else para verificar o contrário da verificação acima, que verifica se a variável 'i' é maior que 15, `else` traduzindo para o Português literalmente significa **Senão**.
+
+    Para entender melhor:
+    ---
+    * if = Se
+    * else = Senão, caso contrário
+    ---
+
+    O if acima do else ele faz o que, ele fala para o seu computador "Caso isso for válido, faça isso" e o else ele fala "Caso a verificação acima não for válida, faça isso".
+
+    Espero que com esse tutorial eu tenha esclarecido todas as dúvidas remanescentes sobre os operadores condicionais `if` e `else`, caso ainda tenha qualquer dúvida ou precise de ajuda, por favor, entre no nosso servidor do Discord [Dev Help](https://www.discord.gg/SgmT64twhZ) e receba ajuda de desenvolvedores experientes e interaja com outros desenvolvedores.
