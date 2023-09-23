@@ -11,7 +11,7 @@ export default function Layout({ children }) {
       <header className='bg-gray-100 mb-8 py-4'>
         <div className='container mx-auto flex justify-center'>
           <Link href='/'>
-            <Tooltip title='Home'>
+            <Tooltip title='Início'>
             <a><HomeIcon className='cursor-pointer' /></a>
             </Tooltip>
           </Link>
@@ -22,7 +22,7 @@ export default function Layout({ children }) {
       <main className='container mx-auto flex-1'>{children}</main>
       <footer className='bg-gray-100 mt-8 py-4'>
         <div className='container mx-auto flex justify-center'>
-          &copy; Leonard - 2023
+          &copy; DevHelp - 2023
         </div>
       </footer>
     </div>
