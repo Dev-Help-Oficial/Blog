@@ -41,7 +41,7 @@ export default function Home({ posts }) {
                 width={650}
                 height={340}
                 alt={frontmatter.title}
-                src={`/public/${frontmatter.socialImage}`}
+                src={`/${frontmatter.socialImage}`}
               />
               <Tooltip title={frontmatter.title} arrow>
               <h1 className='p-4'>{frontmatter.title}</h1>
