@@ -1,5 +1,4 @@
 ![](https://i.imgur.com/PYW4hlM.png)
-![](https://images-ext-2.discordapp.net/external/fzboxeMYv2anhGcp8AtoWQeZnSHCcAnPhP76jKoDnlo/%3Fsize%3D2048/https/cdn.discordapp.com/icons/1144113428726824970/92fe78aa7f44b59ee1a56bf09d919bc4.png?width=473&height=473)
 # Blog
 Este blog é um projeto em andamento desenvolvido pela comunidade Dev-Help a qual é uma comunidade originada no Discord que visa trazer artigos e tutoriais para entuasiastas e profissionais e inciantes da área da programação, e claro, também ajudar outros desenvolvedores em discussões em nossa comunidade no Discord.
 
@@ -16,3 +15,5 @@ Acesse o blog [clicando aqui](https://dev-help-blog.netlify.app/)
 Todos(as) são bem-vindos(as) em nossa comunidade no Discord, desde iniciantes até desenvolvedores(as) experientes Contamos com sua presença!
 
 [Convite do servidor](https://discord.gg/SgmT64twhZ)
+
+![](https://images-ext-2.discordapp.net/external/fzboxeMYv2anhGcp8AtoWQeZnSHCcAnPhP76jKoDnlo/%3Fsize%3D2048/https/cdn.discordapp.com/icons/1144113428726824970/92fe78aa7f44b59ee1a56bf09d919bc4.png?width=473&height=473)
