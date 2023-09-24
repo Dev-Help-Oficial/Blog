@@ -2,8 +2,6 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import md from 'markdown-it';
 import { Helmet } from 'react-helmet';
-import { useEffect } from 'react';
-import Loading from '../../components/loading';
 
 export async function getStaticPaths() {
   const files = fs.readdirSync('posts');
