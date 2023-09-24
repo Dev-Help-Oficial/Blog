@@ -21,7 +21,7 @@ Para criar um fork, é extremamente simples, na aba "Code"(Código) do repositó
 3. Na caixa de texto com o título de "Name your file"(Nomeie seu arquivo) escreva o nome de seu artigo com a extensão .md(markdown). Por exemplo: "comecando-com-nextjs.md"(O nome do arquivo não pode conter letras maiúsculas, nem caracteres especiais como acentos, apenas letras e traços).
 ![](https://i.imgur.com/afSkCc9.png)
 4. No começo do artigo, você deve colocar os metadados do artigo no formato abaixo:
-```
+
 ---
 title: 'Título do artigo' // Titulo do seu artigo(Nesse você pode colocar caracteres especiais)
 metaTitle: 'Título do artigo' // Coloque o mesmo título aqui
@@ -32,7 +32,7 @@ tags:
   - minha-tag // Aqui você coloca as tags, não pode conter espaço e nem caracteres especiais entre as tags e as tags sempre devem começar com um traço(-) no começo.
   - minha-tag-2
 ---
-```
+
 5. Escreva o conteúdo do artigo usando o formato [Markdown do Github](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) para formatação, você também pode usar tags HTML(Hypertext Markup Language) para formatação mas não pode usar CSS(Cascading Style Sheets) nem Javascript.
 ![](https://i.imgur.com/C5vX57H.png)
 6. Após terminar de escrever o artigo seguindo os passos acima, você deve fazer um commit do seu artigo clicando no botão "Commit changes"(Salvar mudanças).
