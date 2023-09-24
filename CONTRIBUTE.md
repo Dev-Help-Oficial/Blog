@@ -22,7 +22,7 @@ Para criar um fork, é extremamente simples, na aba "Code"(Código) do repositó
 ![](https://i.imgur.com/afSkCc9.png)
 4. No começo do artigo, você deve colocar os metadados do artigo no formato abaixo:
 
-`---
+``---
 title: 'Título do artigo' // Titulo do seu artigo(Nesse você pode colocar caracteres especiais)
 metaTitle: 'Título do artigo' // Coloque o mesmo título aqui
 metaDesc: 'Descrição do artigo' // Aqui coloque a descrição do seu artigo
@@ -31,7 +31,7 @@ socialImage: 'images/thumb.jpg' // Aqui coloque o caminho para a thumbnail(Banne
 tags:
   - minha-tag // Aqui você coloca as tags, não pode conter espaço e nem caracteres especiais entre as tags e as tags sempre devem começar com um traço(-) no começo.
   - minha-tag-2
----`
+---``
 
 5. Escreva o conteúdo do artigo usando o formato [Markdown do Github](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) para formatação, você também pode usar tags HTML(Hypertext Markup Language) para formatação mas não pode usar CSS(Cascading Style Sheets) nem Javascript.
 ![](https://i.imgur.com/C5vX57H.png)
