@@ -39,4 +39,5 @@ tags:
 ![](https://i.imgur.com/Znfi75S.png)
 ![](https://i.imgur.com/7ufyTqs.png)
 ![](https://i.imgur.com/neOfQNN.png)
-8. E pronto, agora basta aguardar! Após fazer a pull request, pode demorar até 2 dias para que seu artigo seja aprovado, ele será avaliado por nós que administramos o repositório principal e caso seu artigo cumpra com todos os requisitos citados acima, ele será aprovado. 
+8. Na página que abriu, dê um título personalizado e adicione uma descrição(Opcional) e clique no botão "Create pull request" no final da página.
+![](https://i.imgur.com/Ez6GjwX.png)
