@@ -1,5 +1,6 @@
-![](https://i.imgur.com/PYW4hlM.png)
 # Blog
+![](https://i.imgur.com/PYW4hlM.png)
+
 Este blog é um projeto em andamento desenvolvido pela comunidade Dev-Help a qual é uma comunidade originada no Discord que visa trazer artigos e tutoriais para entuasiastas e profissionais e inciantes da área da programação, e claro, também ajudar outros desenvolvedores em discussões em nossa comunidade no Discord.
 
 ## Contribua
