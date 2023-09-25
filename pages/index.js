@@ -3,6 +3,7 @@ import matter from "gray-matter";
 import Link from "next/link";
 import Tooltip from "@mui/material/Tooltip";
 import { Helmet } from "react-helmet";
+import Image from 'next/image';
 
 export async function getStaticProps() {
   const files = fs.readdirSync("posts");
@@ -30,14 +31,14 @@ export default function Home({ posts }) {
       {posts.map(({ slug, frontmatter }) => (
         <div
           key={slug}
-          className="border border-gray-200 m-2 rounded-xl shadow-lg overflow-hidden flex flex-col hover:opacity-95 hover:rounded-t-none"
+          className="border border-gray-200 m-2 rounded-xl shadow-lg overflow-hidden flex flex-col hover:rounded-t-none"
         >
           <Helmet>
             <title>Home</title>
           </Helmet>
           <Link href={`/post/${slug}`}>
             <a className='hover:no-underline'>
-              <img
+              <Image
                 width={650}
                 height={340}
                 alt={frontmatter.title}
