@@ -1,0 +1,353 @@
+Licença Pública da Mozilla, Versão 2.0
+==================================
+
+1. Definições
+--------------
+
+1.1. "Contribuidor"
+    significa cada indivíduo ou entidade jurídica que cria, contribui para
+    a criação de, ou possui Software Coberto.
+
+1.2. "Versão do Contribuidor"
+    significa a combinação das Contribuições de outros (se houver)
+    usadas por um Contribuidor e a Contribuição específica desse Contribuidor.
+
+1.3. "Contribuição"
+    significa Software Coberto de um Contribuidor específico.
+
+1.4. "Software Coberto"
+    significa Formato de Código Fonte ao qual o Contribuidor inicial anexou
+    o aviso no Anexo A, o Formato Executável desse Formato de Código Fonte,
+    e Modificações desse Formato de Código Fonte, em cada caso
+    incluindo partes do mesmo.
+
+1.5. "Incompatível com Licenças Secundárias"
+    significa
+
+    (a) que o Contribuidor inicial anexou o aviso descrito
+        no Anexo B ao Software Coberto; ou
+
+    (b) que o Software Coberto foi disponibilizado sob os termos da
+        versão 1.1 ou anterior da Licença, mas não também sob os
+        termos de uma Licença Secundária.
+
+1.6. "Formato Executável"
+    significa qualquer forma do trabalho que não seja Formato de Código Fonte.
+
+1.7. "Obra Maior"
+    significa uma obra que combina Software Coberto com outro material, em
+    um arquivo ou arquivos separados, que não seja Software Coberto.
+
+1.8. "Licença"
+    significa este documento.
+
+1.9. "Licenciável"
+    significa ter o direito de conceder, na medida máxima possível,
+    seja no momento da concessão inicial ou posteriormente, todos e
+    quaisquer direitos concedidos por esta Licença.
+
+1.10. "Modificações"
+    significa qualquer das seguintes:
+
+    (a) qualquer arquivo em Formato de Código Fonte resultante de uma adição,
+        exclusão ou modificação do conteúdo de Software Coberto; ou
+
+    (b) qualquer arquivo em Formato de Código Fonte novo que contenha qualquer
+        Software Coberto.
+
+1.11. "Reivindicações de Patente" de um Contribuidor
+    significa qualquer reivindicação de patente(s), incluindo, sem limitação,
+    reivindicações de método, processo e aparato, em qualquer patente
+    que seja licenciável por tal Contribuidor e que seria infringida,
+    exceto pela concessão da Licença, pela fabricação, uso, venda, oferta
+    de venda, fabricação, importação ou transferência das Contribuições ou
+    da Versão do Contribuidor.
+
+1.12. "Licença Secundária"
+    significa a Licença Pública Geral GNU, Versão 2.0, a Licença Pública
+    Geral Menor GNU, Versão 2.1, a Licença Pública Geral Affero GNU,
+    Versão 3.0, ou quaisquer versões posteriores dessas licenças.
+
+1.13. "Formato de Código Fonte"
+    significa a forma do trabalho preferida para fazer modificações.
+
+1.14. "Você" (ou "Seu")
+    significa um indivíduo ou uma entidade jurídica que exerce direitos sob
+    esta Licença. Para entidades jurídicas, "Você" inclui qualquer entidade
+    que controle, seja controlada por, ou esteja sob controle comum com Você.
+    Para fins desta definição, "controle" significa (a) o poder, direto ou
+    indireto, de causar a direção ou administração de tal entidade, seja por
+    contrato ou de outra forma, ou (b) a propriedade de mais de cinquenta
+    por cento (50%) das ações em circulação ou propriedade benéfica de tal
+    entidade.
+
+2. Concessões e Condições da Licença
+--------------------------------------
+
+2.1. Concessões
+
+Cada Contribuidor concede a Você uma licença mundial, gratuita,
+não exclusiva:
+
+(a) sob direitos de propriedade intelectual (exceto patente ou marca registrada)
+    licenciável por tal Contribuidor para usar, reproduzir, disponibilizar,
+    modificar, exibir, executar, distribuir e explorar de outra forma suas
+    Contribuições, seja em sua forma não modificada, com Modificações, ou
+    como parte de uma Obra Maior; e
+
+(b) sob Reivindicações de Patente desse Contribuidor para fazer, usar, vender,
+    oferecer para venda, fazer fabricar, importar e transferir de outra forma
+    suas Contribuições ou sua Versão do Contribuidor.
+
+2.2. Data Eficaz
+
+As licenças concedidas na Seção 2.1 com relação a qualquer Contribuição
+tornam-se eficazes para cada Contribuição na data em que o Contribuidor
+distribui pela primeira vez tal Contribuição.
+
+2.3. Limitações no Escopo da Concessão
+
+As licenças concedidas nesta Seção 2 são os únicos direitos concedidos sob
+esta Licença. Nenhum direito ou licença adicional será inferido a partir da
+distribuição ou licenciamento de Software Coberto sob esta Licença.
+Não obstante a Seção 2.1(b) acima, nenhuma licença de patente é concedida por
+um Contribuidor:
+
+(a) para qualquer código que um Contribuidor tenha removido de Software Coberto;
+    ou
+
+(b) para infrações causadas por: (i) suas modificações em Software Coberto ou de
+    terceiros, ou (ii) a combinação de suas Contribuições com outro software
+    (exceto como parte de sua Versão do Contribuidor); ou
+
+(c) sob Reivindicações de Patente infringidas por Software Coberto na ausência de
+    suas Contribuições.
+
+Esta Licença não concede quaisquer direitos nas marcas registradas, marcas de serviço
+ou logotipos de qualquer Contribuidor (exceto conforme necessário para cumprir os
+requisitos de aviso na Seção 3.4).
+
+2.4. Licenças Subsequentes
+
+Nenhum Contribuidor faz concessões adicionais como resultado de sua escolha de
+distribuir o Software Coberto sob uma versão subsequente desta Licença (consulte
+a Seção 10.2) ou sob os termos de uma Licença Secundária (se permitido nos termos
+da Seção 3.3).
+
+2.5. Representação
+
+Cada Contribuidor declara que acredita que suas Contribuições são criações
+originais ou que possui direitos suficientes para conceder os direitos de suas
+Contribuições conforme previsto nesta Licença.
+
+2.6. Uso Justo
+
+Esta Licença não tem a intenção de limitar quaisquer direitos que Você tenha
+de acordo com as doutrinas de direitos autorais justos, uso justo ou outros
+equivalentes aplicáveis.
+
+2.7. Condições
+
+As Seções 3.1, 3.2, 3.3 e 3.4 são condições das licenças concedidas na Seção 2.1.
+
+3. Responsabilidades
+---------------------
+
+3.1. Distribuição em Formato de Código Fonte
+
+Toda distribuição de Software Coberto em Formato de Código Fonte, incluindo
+quaisquer Modificações que Você crie ou às quais Você contribua, deve ser
+feita nos termos desta Licença. Você deve informar os destinatários de que
+o Formato de Código Fonte do Software Coberto é regido pelos termos desta
+Licença e como eles podem obter uma cópia desta Licença. Você não pode tentar
+alterar ou restringir os direitos dos destinatários no Formato de Código Fonte.
+
+3.2. Distribuição em Formato Executável
+
+Se Você distribuir Software Coberto em Formato Executável, então:
+
+(a) tal Software Coberto também deve ser disponibilizado em Formato de Código Fonte,
+    conforme descrito na Seção 3.1, e Você deve informar os destinatários do
+    Formato Executável de como eles podem obter uma cópia do Formato de Código Fonte
+    por meios razoáveis e em tempo hábil, a um custo não superior ao custo de distribuição
+    para o destinatário; e
+
+(b) Você pode distribuir tal Formato Executável sob os termos desta Licença ou sublicenciá-lo
+    sob termos diferentes, desde que a licença para o Formato Executável não tente limitar
+    ou alterar os direitos dos destinatários no Formato de Código Fonte sob esta Licença.
+
+3.3. Distribuição de uma Obra Maior
+
+Você pode criar e distribuir uma Obra Maior sob os termos de sua escolha,
+desde que Você também cumpra os requisitos desta Licença para o Software Coberto.
+Se a Obra Maior for uma combinação de Software Coberto com uma obra regida por
+uma ou mais Licenças Secundárias, e o Software Coberto não for Incompatível
+com as Licenças Secundárias, esta Licença permite que Você distribua adicionalmente
+tal Software Coberto sob os termos de tais Licenças Secundárias, para que o destinatário
+da Obra Maior possa, a seu critério, distribuir adicionalmente o Software Coberto sob
+os termos desta Licença ou de tais Licenças Secundárias.
+
+3.4. Avisos
+
+Você não pode remover ou alterar o conteúdo de quaisquer avisos de licença
+(incluindo avisos de direitos autorais, avisos de patente, renúncias de garantia
+ou limitações de responsabilidade) contidos no Formato de Código Fonte do Software Coberto,
+exceto que Você pode alterar quaisquer avisos de licença na medida necessária para
+corrigir imprecisões factuais conhecidas.
+
+3.5. Aplicação de Termos Adicionais
+
+Você pode optar por oferecer, e cobrar uma taxa por, garantia, suporte, indenização
+ou obrigações de responsabilidade a um ou mais destinatários do Software Coberto.
+No entanto, Você só pode fazê-lo em seu próprio nome, e não em nome de nenhum Contribuidor.
+Você deve deixar absolutamente claro que qualquer garantia, suporte, indenização ou
+obrigação de responsabilidade é oferecido por Você sozinho, e Você concorda em indenizar
+cada Contribuidor por qualquer responsabilidade incorrida por tal Contribuidor como resultado
+de termos de garantia, suporte, indenização ou responsabilidade que Você oferecer.
+Você pode incluir renúncias de garantia e limitações de responsabilidade adicionais específicas
+para qualquer jurisdição.
+
+4. Incapacidade de Cumprir devido a Estatuto ou Regulamento
+---------------------------------------------------------
+
+Se for impossível para Você cumprir algum dos termos desta Licença com relação a todo
+ou parte do Software Coberto devido a estatuto, ordem judicial ou regulamentação,
+então Você deve: (a) cumprir os termos desta Licença na medida máxima possível; e
+(b) descrever as limitações e o código afetado. Tal descrição deve ser incluída em
+um arquivo de texto incluído em todas as distribuições do Software Coberto sob esta Licença.
+Exceto na medida proibida por estatuto ou regulamentação, tal descrição deve ser
+suficientemente detalhada para que um destinatário com habilidades comuns possa compreendê-la.
+
+5. Rescisão
+--------------
+
+5.1. Os direitos concedidos sob esta Licença serão rescindidos automaticamente
+se Você deixar de cumprir qualquer um de seus termos. No entanto, se Você se
+tornar compatível, então os direitos concedidos sob esta Licença de um
+Contribuidor específico serão restabelecidos (a) de forma provisória, a menos
+que e até que tal Contribuidor notifique explicitamente e definitivamente
+seus subsídios, e (b) de forma contínua, se tal Contribuidor deixar de notificar
+Você da não conformidade por algum meio razoável antes de 60 dias após Você ter
+voltado à conformidade. Além disso, os subsídios de um Contribuidor específico
+a Você serão restabelecidos de forma contínua se tal Contribuidor notificá-lo da
+não conformidade por algum meio razoável, esta é a primeira vez que Você recebeu
+notificação de não conformidade com esta Licença de tal Contribuidor e Você se tornar
+compatível antes de 30 dias após o recebimento da notificação.
+
+5.2. Se Você iniciar uma ação judicial contra qualquer entidade, alegando que uma
+Versão do Contribuidor infringe diretamente ou indiretamente qualquer patente,
+então os direitos concedidos a Você por todos os Contribuidores para o Software
+Coberto sob a Seção 2.1 desta Licença serão rescindidos.
+
+5.3. Em caso de rescisão de acordo com as Seções 5.1 ou 5.2 acima, todos os acordos
+de licença de usuário final (excluindo distribuidores e revendedores) que tenham
+sido concedidos validamente por Você ou seus distribuidores sob esta Licença
+antes da rescisão sobreviverão à rescisão.
+
+************************************************************************
+*                                                                      *
+*  6. Isenção de Garantia                                            *
+*  -------------------------                                         *
+*                                                                      *
+*  O Software Coberto é fornecido sob esta Licença "no estado em que   *
+*  se encontra", sem garantia de qualquer tipo, seja expressa,         *
+*  implícita ou estatutária, incluindo, sem limitação, garantias de   *
+*  que o Software Coberto está livre de defeitos, é comercializável,   *
+*  adequado para um propósito específico ou não infringe direitos.     *
+*  O risco total quanto à qualidade e desempenho do Software Coberto  *
+*  é de sua responsabilidade. Se qualquer Software Coberto apresentar  *
+*  defeitos em qualquer aspecto, Você (e não qualquer Contribuidor)   *
+*  assume o custo de qualquer serviço, reparo ou correção necessário.  *
+*  Esta isenção de garantia constitui uma parte essencial desta Licença. *
+*  Nenhum uso de qualquer Software Coberto é autorizado sob esta      *
+*  Licença, exceto sob esta isenção de garantia.                       *
+*                                                                      *
+************************************************************************
+
+************************************************************************
+*                                                                      *
+*  7. Limitação de Responsabilidade                                   *
+*  --------------------------                                          *
+*                                                                      *
+*  Em nenhuma circunstância e sob nenhuma teoria legal, seja          *
+*  responsabilidade civil (incluindo negligência), contrato ou        *
+*  de outra forma, qualquer Contribuidor, ou qualquer pessoa que      *
+*  distribua o Software Coberto como permitido acima, será responsável *
+*  perante Você por quaisquer danos diretos, indiretos, especiais,     *
+*  incidentais ou consequentes de qualquer natureza, incluindo,       *
+*  sem limitação, danos por lucros cessantes, perda de boa vontade,    *
+*  paralisação de trabalho, falha ou mau funcionamento do computador, *
+*  ou quaisquer outros danos comerciais ou perdas, mesmo que tal      *
+*  parte tenha sido informada da possibilidade de tais danos. Esta     *
+*  limitação de responsabilidade não se aplicará à responsabilidade   *
+*  por morte ou ferimentos pessoais decorrentes da negligência de tal *
+*  parte na medida em que a lei aplicável proíba tal limitação.       *
+*  Algumas jurisdições não permitem a exclusão ou limitação de         *
+*  danos incidentais ou consequentes, portanto, esta exclusão e       *
+*  limitação podem não se aplicar a Você.                              *
+*                                                                      *
+************************************************************************
+
+8. Litígio
+----------
+
+Qualquer litígio relacionado a esta Licença só pode ser levado aos tribunais de uma
+jurisdição onde o réu mantenha seu principal local de negócios e tal litígio será
+regido pelas leis dessa jurisdição, sem referência às suas disposições de conflito de leis.
+Nada nesta Seção impedirá a capacidade de uma parte de apresentar reivindicações cruzadas
+ou contra-reivindicações.
+
+9. Diversos
+----------
+
+Esta Licença representa o acordo completo sobre o assunto aqui tratado.
+Se alguma disposição desta Licença for considerada inexequível, tal disposição
+será reformada apenas na medida necessária para torná-la executável. Qualquer lei ou
+regulamento que disponha que a linguagem de um contrato deve ser interpretada contra o
+redator não será usada para interpretar esta Licença contra um Contribuidor.
+
+10. Versões da Licença
+------------------------
+
+10.1. Novas Versões
+
+A Fundação Mozilla é a responsável pela licença. Exceto conforme previsto na Seção 10.3,
+ninguém além da responsável pela licença tem o direito de modificar ou publicar novas versões
+desta Licença. Cada versão receberá um número de versão distinto.
+
+10.2. Efeito das Novas Versões
+
+Você pode distribuir o Software Coberto sob os termos da versão da Licença sob a qual
+Você originalmente recebeu o Software Coberto, ou sob os termos de qualquer versão subsequente
+publicada pela responsável pela licença.
+
+10.3. Versões Modificadas
+
+Se Você criar software não regido por esta Licença e desejar criar uma nova licença para tal
+software, Você pode criar e usar uma versão modificada desta Licença se renomear a licença e
+remover quaisquer referências ao nome da responsável pela licença (exceto para notar que tal
+licença modificada difere desta Licença).
+
+10.4. Distribuição de Formato de Código Fonte Incompatível com Licenças Secundárias
+
+Se Você optar por distribuir Formato de Código Fonte Incompatível com Licenças Secundárias
+sob os termos desta versão da Licença, o aviso descrito no Anexo B desta Licença deve ser anexado.
+
+Anexo A - Aviso de Licença de Formato de Código Fonte
+-------------------------------------------
+
+  Este Formato de Código Fonte está sujeito aos termos da Licença Pública da Mozilla, v. 2.0.
+  Se uma cópia da MPL não foi distribuída com este arquivo, Você pode obtê-la em
+  http://mozilla.org/MPL/2.0/.
+
+Se não for possível ou desejável incluir o aviso em um arquivo específico, Você pode incluir o aviso
+em um local (como um arquivo de LICENÇA em um diretório relevante) onde um destinatário teria
+probabilidade de procurar por tal aviso.
+
+Você pode adicionar avisos adicionais precisos de titularidade de direitos autorais.
+
+Anexo B - Aviso de "Incompatível com Licenças Secundárias"
+---------------------------------------------------------
+
+  Este Formato de Código Fonte é "Incompatível com Licenças Secundárias", conforme
+  definido na Licença Pública da Mozilla, v. 2.0.
