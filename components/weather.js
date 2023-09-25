@@ -53,8 +53,7 @@ function Weather() {
         } else {
           setError("Dados meteorológicos indisponíveis.");
           setLoading(false);
-          console.log(apiUrl);
-          console.log(apiKey);
+          console.log("Erro ao retornar os resultados da API de clima");
         }
       })
       .catch(() => {
