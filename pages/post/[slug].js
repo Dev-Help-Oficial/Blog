@@ -1,16 +1,17 @@
-import fs from 'fs';
-import matter from 'gray-matter';
-import MarkdownIt from 'markdown-it';
-import { Helmet } from 'react-helmet';
-import Image from 'next/image';
+import fs from "fs";
+import matter from "gray-matter";
+import MarkdownIt from "markdown-it";
+import { Helmet } from "react-helmet";
+import Image from "next/image";
 import { NextSeo } from 'next-seo';
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync('posts');
+  const files = fs.readdirSync("posts");
   const paths = files.map((fileName) => ({
     params: {
-      slug: fileName.replace('.mdx', ''),
+      slug: fileName.replace(".mdx", ""),
     },
   }));
   return {
@@ -20,7 +21,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-  const fileName = fs.readFileSync(`posts/${slug}.mdx`, 'utf-8');
+  const fileName = fs.readFileSync(`posts/${slug}.mdx`, "utf-8");
   const { data: frontmatter, content } = matter(fileName);
   return {
     props: {
@@ -41,33 +42,32 @@ export default function PostPage({ frontmatter, content }) {
 
   const router = useRouter();
   const currentURL = `${process.env.NEXT_PUBLIC_SITE_URL}${router.asPath}`;
-
   return (
-    <div className='text-white prose mx-auto'>
-      <NextSeo 
-      title={frontmatter.metaTitle} 
-      description={frontmatter.metaDesc} 
-      openGraph={{
-        url: currentURL,
-        title: frontmatter.metaTitle,
-        description: frontmatter.metaDesc,
-        images: [
-          {
-            url: frontmatter.socialImage,
-            width: 650,
-            height: 340,
-            alt: frontmatter.title,
-            type: 'image/png',
-          },
-          { url: frontmatter.socialImage },
-        ],
-        siteName: 'Dev Help | Blog',
-      }}
-      twitter={{
-        handle: '@handle',
-        site: '@site',
-        cardType: 'summary_large_image',
-      }}
+    <div className="text-white prose mx-auto">
+      <NextSeo
+        title={frontmatter.title}
+        description={frontmatter.metaDesc}
+        openGraph={{
+          url: currentURL,
+          title: frontmatter.metaTitle,
+          description: frontmatter.metaDesc,
+          images: [
+            {
+              url: frontmatter.socialImage,
+              width: 650,
+              height: 340,
+              alt: frontmatter.title,
+              type: "image/png",
+            },
+            { url: frontmatter.socialImage },
+          ],
+          siteName: "Dev Help | Blog",
+        }}
+        twitter={{
+          handle: "@handle",
+          site: "@site",
+          cardType: "summary_large_image",
+        }}
       />
       <style>
         {`
@@ -98,10 +98,10 @@ export default function PostPage({ frontmatter, content }) {
       </style>
       <h3>{frontmatter.title}</h3>
       <Image
-         width={650}
-         height={340}
-         alt={frontmatter.title}
-         src={`/${frontmatter.socialImage}`}
+        width={650}
+        height={340}
+        alt={frontmatter.title}
+        src={`/${frontmatter.socialImage}`}
       />
       <span>Autor: {frontmatter.author}</span>
       <Helmet>

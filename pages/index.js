@@ -1,9 +1,9 @@
 import fs from "fs";
 import matter from "gray-matter";
-import Link from "next/link";
 import Tooltip from "@mui/material/Tooltip";
 import Image from 'next/image';
 import { Helmet } from "react-helmet";
+import { useRouter } from 'next/router';
 
 export async function getStaticProps() {
   const files = fs.readdirSync("posts");
@@ -26,6 +26,8 @@ export async function getStaticProps() {
 }
 
 export default function Home({ posts }) {
+  const router = useRouter();
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-0">
       {posts.map(({ slug, frontmatter }) => (
@@ -36,19 +38,24 @@ export default function Home({ posts }) {
           <Helmet>
             <title>Dev Help Blog</title>
           </Helmet>
-          <Link href={`/post/${slug}`}>
-            <a className='hover:no-underline'>
-              <Image
-                width={650}
-                height={340}
-                alt={frontmatter.title}
-                src={`/${frontmatter.socialImage}`}
-              />
-              <Tooltip title={frontmatter.title} arrow>
-                <h1 className="p-4">{frontmatter.title}</h1>
-              </Tooltip>
-            </a>
-          </Link>
+          <a
+            href={`/post/${slug}`}
+            onClick={(e) => {
+              e.preventDefault();
+              router.push(`/post/${slug}`);
+            }}
+            className='hover:no-underline'
+          >
+            <Image
+              width={650}
+              height={340}
+              alt={frontmatter.title}
+              src={`/${frontmatter.socialImage}`}
+            />
+            <Tooltip title={frontmatter.title} arrow>
+              <h1 className="p-4">{frontmatter.title}</h1>
+            </Tooltip>
+          </a>
         </div>
       ))}
     </div>
