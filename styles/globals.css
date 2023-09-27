@@ -2,6 +2,11 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+body {
+    background-color: #16141f;
+    color: #fff;
+}
+
 a {
     text-decoration: none;
 }
