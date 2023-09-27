@@ -1,3 +1,6 @@
 # Ignore .mdx files on Github language counter
-* linguist-detectable
-*.mdx linguist-detectable=false
+* linguist-vendored
+*.mdx linguist-vendored=false
+
+# Defines the project main language
+*.js linguist-detectable=true
