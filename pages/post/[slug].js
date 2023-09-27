@@ -3,6 +3,8 @@ import matter from 'gray-matter';
 import MarkdownIt from 'markdown-it';
 import { Helmet } from 'react-helmet';
 import Image from 'next/image';
+import { NextSeo } from 'next-seo';
+import { useRouter } from 'next/router';
 
 export async function getStaticPaths() {
   const files = fs.readdirSync('posts');
@@ -37,8 +39,36 @@ export default function PostPage({ frontmatter, content }) {
 
   const renderedHtml = md.render(content);
 
+  const router = useRouter();
+  const currentURL = `${process.env.NEXT_PUBLIC_SITE_URL}${router.asPath}`;
+
   return (
     <div className='text-white prose mx-auto'>
+      <NextSeo 
+      title={frontmatter.metaTitle} 
+      description={frontmatter.metaDesc} 
+      openGraph={{
+        url: currentURL,
+        title: frontmatter.metaTitle,
+        description: frontmatter.metaDesc,
+        images: [
+          {
+            url: frontmatter.socialImage,
+            width: 650,
+            height: 340,
+            alt: frontmatter.title,
+            type: 'image/png',
+          },
+          { url: frontmatter.socialImage },
+        ],
+        siteName: 'Dev Help | Blog',
+      }}
+      twitter={{
+        handle: '@handle',
+        site: '@site',
+        cardType: 'summary_large_image',
+      }}
+      />
       <style>
         {`
           strong {
