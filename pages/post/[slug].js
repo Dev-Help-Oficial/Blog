@@ -92,7 +92,7 @@ export default function PostPage({ frontmatter, content }) {
           strong,
           em,
           code {
-            color: white !important;
+            color: #fff !important;
           }
         `}
       </style>
