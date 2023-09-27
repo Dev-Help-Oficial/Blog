@@ -105,7 +105,7 @@ export default function PostPage({ frontmatter, content }) {
       />
       <span>Autor: {frontmatter.author}</span>
       <Helmet>
-        <title>{frontmatter.title}</title>
+        <title>Dev Help Blog - {frontmatter.title}</title>
       </Helmet>
 
       <div dangerouslySetInnerHTML={{ __html: renderedHtml }} />

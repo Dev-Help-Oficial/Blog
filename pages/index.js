@@ -34,7 +34,7 @@ export default function Home({ posts }) {
           className="border border-gray-600 m-2 rounded-xl shadow-lg overflow-hidden flex flex-col hover:rounded-t-none"
         >
           <Helmet>
-            <title>Home</title>
+            <title>Dev Help Blog</title>
           </Helmet>
           <Link href={`/post/${slug}`}>
             <a className='hover:no-underline'>
