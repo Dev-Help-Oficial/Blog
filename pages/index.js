@@ -2,14 +2,14 @@ import fs from "fs";
 import matter from "gray-matter";
 import Link from "next/link";
 import Tooltip from "@mui/material/Tooltip";
-import { Helmet } from "react-helmet";
 import Image from 'next/image';
+import { Helmet } from "react-helmet";
 
 export async function getStaticProps() {
   const files = fs.readdirSync("posts");
 
   const posts = files.map((fileName) => {
-    const slug = fileName.replace(".md", "");
+    const slug = fileName.replace(".mdx", "");
     const readFile = fs.readFileSync(`posts/${fileName}`, "utf-8");
     const { data: frontmatter } = matter(readFile);
     return {
@@ -31,7 +31,7 @@ export default function Home({ posts }) {
       {posts.map(({ slug, frontmatter }) => (
         <div
           key={slug}
-          className="border border-gray-200 m-2 rounded-xl shadow-lg overflow-hidden flex flex-col hover:rounded-t-none"
+          className="border border-gray-600 m-2 rounded-xl shadow-lg overflow-hidden flex flex-col hover:rounded-t-none"
         >
           <Helmet>
             <title>Home</title>
