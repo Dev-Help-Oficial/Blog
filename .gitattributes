@@ -1,0 +1,3 @@
+# Ignore .mdx files on Github language counter
+* linguist-vendored
+*.mdx linguist-vendored=false
