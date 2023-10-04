@@ -15,6 +15,7 @@
 import '../styles/globals.css';
 import dynamic from 'next/dynamic';
 import { DefaultSeo } from 'next-seo';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
   const Layout = dynamic(() => import('../components/blog/layout'));
@@ -22,6 +23,16 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <div className='layout'>
+    <Head>
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+      <link rel="manifest" href="/site.webmanifest" />
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+      <meta name="msapplication-TileColor" content="#da532c" />
+      <meta name="theme-color" content="#ffffff" />
+    </Head>
+
     <DefaultSeo 
       title='Dev Help Blog'
       description='Um Blog totalmente open-source onde artigos e tutorias sobre programação e assuntos relacionados serão postados, mirando principalmente novatos. Qualquer um pode postar seus próprios artigos!'
