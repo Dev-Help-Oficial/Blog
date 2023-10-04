@@ -2,7 +2,6 @@
   "name": "dev-help-blog",
   "version": "1.0.0",
   "description": "Este blog é um projeto em andamento desenvolvido pela comunidade Dev-Help a qual é uma comunidade originada no Discord que visa trazer artigos e tutoriais para entuasiastas e profissionais e inciantes da área da programação, e claro, também ajudar outros desenvolvedores em discussões em nossa comunidade no Discord.",
-  "main": "next.config.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -17,7 +16,6 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.8",
     "@mui/material": "^5.14.8",
-    "axios": "^1.5.1",
     "dotenv": "^16.3.1",
     "gray-matter": "^4.0.3",
     "js-cookie": "^3.0.5",
