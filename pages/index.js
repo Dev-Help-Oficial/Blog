@@ -62,6 +62,7 @@ export default function Home({ posts }) {
               router.push(`/post/${slug}`);
             }}
             className='hover:no-underline'
+            title={frontmatter.title}
           >
             <Image
               width={650}
