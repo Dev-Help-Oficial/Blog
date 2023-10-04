@@ -1,9 +1,9 @@
 import fs from "fs";
 import matter from "gray-matter";
-import MarkdownIt from "markdown-it";
+import ReactMarkdown from "react-markdown";
 import { Helmet } from "react-helmet";
 import Image from "next/image";
-import { NextSeo } from 'next-seo';
+import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
 
 export async function getStaticPaths() {
@@ -38,20 +38,12 @@ export async function getStaticProps({ params: { slug } }) {
 }
 
 export default function PostPage({ frontmatter, content }) {
-  const md = new MarkdownIt({
-    html: true,
-    linkify: true,
-    typographer: true,
-  });
-
-  const renderedHtml = md.render(content);
-
   const router = useRouter();
   const currentURL = `${process.env.NEXT_PUBLIC_SITE_URL}${router.asPath}`;
+
   return (
     <div className="text-white prose mx-auto">
-
-<style>{`
+      <style>{`
 strong {
   font-weight: bold;
   color: #fff;
@@ -76,6 +68,12 @@ em {
   font-size: 1.5em !important;
 }
 
+pre {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  white-space: pre-wrap !important;
+}
+
 .markdown-heading,
 ul,
 ol,
@@ -89,11 +87,7 @@ strong,
 em,
 code {
   color: #fff !important;
-}
-
-
-  
-    `}</style>
+`}</style>
 
       <NextSeo
         title={frontmatter.title}
@@ -131,8 +125,9 @@ code {
       <Helmet>
         <title>Dev Help Blog - {frontmatter.title}</title>
       </Helmet>
-
-      <div dangerouslySetInnerHTML={{ __html: renderedHtml }} />
+      <div className="content">
+        <ReactMarkdown>{content}</ReactMarkdown>
+      </div>
     </div>
   );
 }

@@ -13,31 +13,28 @@
     Desenvolvedor Original: LESS14(Felipe Maciel)
 */
 
-// Importação de bibliotecas e módulos necessários
-import fs from "fs"; // Sistema de arquivos do Node.js
-import matter from "gray-matter"; // Análise de metadados de arquivos Markdown
-import Tooltip from "@mui/material/Tooltip"; // Componente de tooltip do Material-UI
-import Image from 'next/image'; // Componente para exibição de imagens otimizadas
-import { Helmet } from "react-helmet"; // Componente para gerenciar o cabeçalho HTML
-import { useRouter } from 'next/router'; // Roteador do Next.js
+import fs from "fs";
+import matter from "gray-matter";
+import ReactMarkdown from 'react-markdown';
+import { Helmet } from "react-helmet";
+import Image from "next/image";
+import { NextSeo } from 'next-seo';
+import { useRouter } from "next/router";
 
-// Função que é executada durante a construção estática da página
 export async function getStaticProps() {
-  // Lê todos os arquivos no diretório "posts"
   const files = fs.readdirSync("posts");
 
-  // Mapeia os arquivos para obter os metadados de cada post
   const posts = files.map((fileName) => {
-    const slug = fileName.replace(".mdx", ""); // Remove a extensão do arquivo para obter o slug
-    const readFile = fs.readFileSync(`posts/${fileName}`, "utf-8"); // Lê o conteúdo do arquivo Markdown
-    const { data: frontmatter } = matter(readFile); // Analisa os metadados do arquivo Markdown
+    const slug = fileName.replace(".mdx", "");
+    const readFile = fs.readFileSync(`posts/${fileName}`, "utf-8");
+    const { data: frontmatter, content } = matter(readFile);
     return {
       slug,
       frontmatter,
+      content,
     };
   });
 
-  // Retorna os posts como props para a página
   return {
     props: {
       posts,
@@ -45,13 +42,12 @@ export async function getStaticProps() {
   };
 }
 
-// Componente principal da página inicial
 export default function Home({ posts }) {
-  const router = useRouter(); // Obtém o roteador do Next.js
+  const router = useRouter();
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-0">
-      {posts.map(({ slug, frontmatter }) => (
+      {posts.map(({ slug, frontmatter, content }) => (
         <div
           key={slug}
           className="border border-gray-600 m-2 rounded-xl shadow-lg overflow-hidden flex flex-col hover:rounded-t-none"
@@ -73,9 +69,7 @@ export default function Home({ posts }) {
               alt={frontmatter.title}
               src={`/${frontmatter.socialImage}`}
             />
-            <Tooltip title={frontmatter.title} arrow>
-              <h1 className="p-4">{frontmatter.title}</h1>
-            </Tooltip>
+            <h1 className="p-4">{frontmatter.title}</h1>
           </a>
         </div>
       ))}
