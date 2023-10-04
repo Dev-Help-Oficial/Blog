@@ -74,6 +74,16 @@ pre {
   white-space: pre-wrap !important;
 }
 
+.prose :where(a):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  text-decoration: none !important;
+  color: #6ea8fe !important;
+}
+
+.prose :where(a):not(:where([class~="not-prose"], [class~="not-prose"] *)):hover {
+  text-decoration: underline dotted !important;
+  color: #8bb9fe !important;
+}
+
 .markdown-heading,
 ul,
 ol,

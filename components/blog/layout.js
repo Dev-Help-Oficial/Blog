@@ -17,7 +17,7 @@ export default function Layout({ children }) {
                 router.push('/');
               }}
             >
-              <HomeIcon className='cursor-pointer' />
+              <HomeIcon className='cursor-pointer hover:opacity-80' />
             </a>
           </Tooltip>
           <span className='mx-auto'>Dev Help Blog</span>{' '}        
