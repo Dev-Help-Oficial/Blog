@@ -17,7 +17,7 @@ import dynamic from 'next/dynamic';
 import { DefaultSeo } from 'next-seo';
 
 function MyApp({ Component, pageProps }) {
-  const Layout = dynamic(() => import('../components/layout'));
+  const Layout = dynamic(() => import('../components/blog/layout'));
 
 
   return (
