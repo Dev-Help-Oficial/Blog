@@ -1,7 +1,8 @@
 {
   "name": "dev-help-blog",
-  "version": "0.1.0",
-  "private": false,
+  "version": "1.0.0",
+  "description": "Este blog é um projeto em andamento desenvolvido pela comunidade Dev-Help a qual é uma comunidade originada no Discord que visa trazer artigos e tutoriais para entuasiastas e profissionais e inciantes da área da programação, e claro, também ajudar outros desenvolvedores em discussões em nossa comunidade no Discord.",
+  "main": "next.config.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,6 +10,8 @@
     "export": "next build && next export",
     "lint": "next lint"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -19,7 +22,7 @@
     "gray-matter": "^4.0.3",
     "js-cookie": "^3.0.5",
     "markdown-it": "^13.0.1",
-    "next": "13.4.19",
+    "next": "^13.5.4",
     "next-seo": "^6.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
