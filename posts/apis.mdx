@@ -1,6 +1,6 @@
 ---
 title: 'Básico | APIs'
-author: 'TanF12'
+author: 'TanF12, Felipe Maciel'
 metaTitle: 'APIs: Conceitos básicos'
 metaDesc: 'As APIs (Interfaces de Programação de Aplicativos) desempenham um papel fundamental na comunicação e integração de sistemas de software. Elas permitem que aplicativos diferentes se comuniquem, compartilhem dados e funcionem juntos de maneira eficiente. Vamos explorar os conceitos básicos das APIs.'
 date: '6-10-2023'
@@ -27,26 +27,38 @@ Uma API é um conjunto de regras e protocolos que permite que um software se com
 
 Muitas APIs utilizam o protocolo **HTTP (Hypertext Transfer Protocol)** para a comunicação entre cliente e servidor. O **REST (Representational State Transfer)** é uma arquitetura comum para projetar APIs baseadas em HTTP. No REST, os recursos são representados como URLs, e as operações são realizadas usando métodos HTTP, como GET, POST, PUT e DELETE.
 
+### Exemplo de Requisição HTTP GET em JavaScript
+
+```javascript
+const axios = require('axios');
+
+axios.get('https://api.exemplo.com/usuarios')
+  .then(function (response) {
+    // Manipular os dados da resposta aqui
+    console.log(response.data);
+  })
+  .catch(function (error) {
+    // Lidar com erros aqui
+    console.error(error);
+  });
+
 ## Endpoints
 
 Em uma API, um endpoint é um URL específico que representa um recurso ou uma ação. Por exemplo, um endpoint pode ser "https://api.exemplo.com/usuarios" para acessar a lista de usuários. Cada endpoint pode suportar diferentes métodos HTTP, como GET para obter dados ou POST para criar dados.
+Formatos de Dados
 
-## Formatos de Dados
-
-As APIs podem usar diferentes formatos de dados para representar informações. Os formatos mais comuns incluem **JSON (JavaScript Object Notation)** e **XML (Extensible Markup Language)**. JSON é amplamente preferido devido à sua simplicidade e facilidade de leitura tanto por humanos quanto por máquinas.
-
-## Autenticação e Autorização
+As APIs podem usar diferentes formatos de dados para representar informações. Os formatos mais comuns incluem JSON (JavaScript Object Notation) e XML (Extensible Markup Language). JSON é amplamente preferido devido à sua simplicidade e facilidade de leitura tanto por humanos quanto por máquinas.
+Autenticação e Autorização
 
 Para proteger os recursos e os dados da API, a autenticação e a autorização são frequentemente implementadas. A autenticação verifica a identidade do usuário ou aplicativo, enquanto a autorização determina quais ações o usuário ou aplicativo pode realizar.
-
-## Exemplos de Uso
+Exemplos de Uso
 
 As APIs são amplamente utilizadas em diversos contextos, como:
 
-- **Redes Sociais**: APIs de redes sociais permitem que aplicativos acessem e publiquem conteúdo em perfis de usuário.
-- **Pagamentos Online**: APIs de serviços de pagamento permitem que lojas online processem transações financeiras.
-- **Mapeamento**: APIs de mapeamento fornecem acesso a mapas e informações de localização.
-- **Serviços de Terceiros**: Aplicativos podem usar APIs de terceiros para integrar serviços, como previsão do tempo ou tradução de idiomas.
+* Redes Sociais: APIs de redes sociais permitem que aplicativos acessem e publiquem conteúdo em perfis de usuário.
+* Pagamentos Online: APIs de serviços de pagamento permitem que lojas online processem transações financeiras.
+* Mapeamento: APIs de mapeamento fornecem acesso a mapas e informações de localização.
+* Serviços de Terceiros: Aplicativos podem usar APIs de terceiros para integrar serviços, como previsão do tempo ou tradução de idiomas.
 
 ## Conclusão
 
