@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 import { Helmet } from "react-helmet";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
+import ScrollToTop from "../../components/blog/scroll-to-top";
 import { useRouter } from "next/router";
 
 export async function getStaticPaths() {
@@ -138,6 +139,7 @@ code {
       <div className="content">
         <ReactMarkdown>{content}</ReactMarkdown>
       </div>
+      <ScrollToTop />
     </div>
   );
 }
