@@ -1,15 +1,27 @@
 import { useState, useEffect } from 'react';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Tooltip from '@mui/material/Tooltip';
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isScrollingUp, setIsScrollingUp] = useState(true);
 
   const handleScroll = () => {
-    if (window.scrollY > 100) {
+    const scrollTop = window.scrollY;
+
+    if (scrollTop > 100) {
       setIsVisible(true);
+
+      if (!isScrollingUp) {
+        setIsScrollingUp(true);
+      }
     } else {
       setIsVisible(false);
+
+      if (isScrollingUp) {
+        setIsScrollingUp(false);
+      }
     }
   };
 
@@ -28,19 +40,46 @@ const ScrollToTopButton = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const updateIcon = () => {
+      if (isVisible) {
+        if (window.scrollY > 100 && !isScrollingUp) {
+          setIsScrollingUp(true);
+        } else if (window.scrollY <= 100 && isScrollingUp) {
+          setIsScrollingUp(false);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', updateIcon);
+
+    return () => {
+      window.removeEventListener('scroll', updateIcon);
+    };
+  }, [isVisible, isScrollingUp]);
+
+  const handleScrollToTop = () => {
+    if (isVisible) {
+      scrollToTop();
+    } else {
+      window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+    }
+  };
+
   return (
-    !isVisible ? null : (
+    <div className="lg:fixed lg:bottom-8 lg:right-8 lg:flex lg:items-center lg:cursor-pointer lg:block hidden">
       <Tooltip title="Voltar ao topo">
-        <div
-          className="lg:fixed lg:bottom-8 lg:right-8 lg:flex lg:items-center lg:cursor-pointer lg:block hidden"
-          onClick={scrollToTop}
-        >
+        <div onClick={handleScrollToTop}>
           <div className="bg-slate-800 rounded-full p-2">
-            <KeyboardArrowUpIcon style={{ fontSize: 24, color: '#fff' }} />
+            {isScrollingUp ? (
+              <KeyboardArrowUpIcon style={{ fontSize: 24, color: '#fff' }} />
+            ) : (
+              <KeyboardArrowDownIcon style={{ fontSize: 24, color: '#fff' }} />
+            )}
           </div>
         </div>
       </Tooltip>
-    )
+    </div>
   );
 };
 
