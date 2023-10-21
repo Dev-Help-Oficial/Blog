@@ -67,9 +67,9 @@ const ScrollToTopButton = () => {
         <div onClick={handleScrollToTop}>
           <div className="bg-slate-800 rounded-full p-2">
             {isScrollingUp ? (
-              <KeyboardArrowUpIcon style={{ fontSize: 24, color: '#fff' }} />
-            ) : (
               <KeyboardArrowDownIcon style={{ fontSize: 24, color: '#fff' }} />
+            ) : (
+              <KeyboardArrowUpIcon style={{ fontSize: 24, color: '#fff' }} />
             )}
           </div>
         </div>
