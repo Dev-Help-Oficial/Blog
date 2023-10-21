@@ -13,7 +13,6 @@
     Desenvolvedor Original: LESS14(Felipe Maciel)
 */
 import "../styles/globals.css";
-import ScrollToTop from "../components/blog/scroll-to-top";
 import dynamic from "next/dynamic";
 import { DefaultSeo } from "next-seo";
 import Head from "next/head";
@@ -54,7 +53,6 @@ function MyApp({ Component, pageProps }) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
-      <ScrollToTop />
     </div>
   );
 }
