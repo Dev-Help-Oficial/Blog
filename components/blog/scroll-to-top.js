@@ -63,13 +63,13 @@ const ScrollToTopButton = () => {
 
   return (
     <div className="lg:fixed lg:bottom-8 lg:right-8 lg:flex lg:items-center lg:cursor-pointer lg:block hidden">
-      <Tooltip title={isScrollingUp ? 'Voltar ao topo' : 'Rolar para Baixo'}>
+      <Tooltip title={isScrollingUp ? 'Rolar para baixo' : 'Voltar ao topo'}>
         <div onClick={handleScrollToTop}>
           <div className="bg-slate-800 rounded-full p-2">
             {isScrollingUp ? (
-              <KeyboardArrowUpIcon style={{ fontSize: 24, color: '#fff' }} />
-            ) : (
               <KeyboardArrowDownIcon style={{ fontSize: 24, color: '#fff' }} />
+            ) : (
+              <KeyboardArrowUpIcon style={{ fontSize: 24, color: '#fff' }} />
             )}
           </div>
         </div>
