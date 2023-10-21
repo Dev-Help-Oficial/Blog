@@ -11,7 +11,7 @@
     Salvo disposição em contrário na Licença, o software é distribuído "COMO ESTÁ", SEM GARANTIAS OU CONDIÇÕES DE QUALQUER TIPO, expressas ou implícitas. Consulte a Licença para os detalhes específicos sobre as permissões e limitações sob a Licença.
     ---
     Desenvolvedor Original: LESS14(Felipe Maciel)
-    Editor: TanF12
+    Editor/Mantainer: TanF12
 */
 import { useState, useEffect } from 'react';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
