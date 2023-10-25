@@ -9,7 +9,7 @@ Este blog é um esforço coletivo da comunidade, todos(as) podem contribuir com 
 ## Acesse o blog
 Por enquanto, nosso blog está hospedado em um domínio temporário pois ainda está em sua fase beta de desenvolvimento, porém já é possível encontrar alguns artigos no blog.
 
-Acesse o blog [clicando aqui](https://dev-help-blog.netlify.app/)
+Acesse o blog [clicando aqui](https://dev-help-blog.vercel.app/)
 
 ## Junte-se à nós
 ![](https://i.imgur.com/jCG1OL6.png)
