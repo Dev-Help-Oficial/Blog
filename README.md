@@ -4,7 +4,7 @@
 Este blog é um projeto em andamento desenvolvido pela comunidade Dev-Help a qual é uma comunidade originada no Discord que visa trazer artigos e tutoriais para entuasiastas e profissionais e inciantes da área da programação, e claro, também ajudar outros desenvolvedores em discussões em nossa comunidade no Discord.
 
 ## Contribua
-Este blog é um esforço coletivo da comunidade, todos(as) podem contribuir com artigos e melhorias no site(Leia o [guia de contruição](https://github.com/Dev-Help-Oficial/Blog/blob/main/CONTRIBUTE.md) para mais informações).
+Este blog é um esforço coletivo da comunidade, todos(as) podem contribuir com artigos e melhorias no site(Leia o [guia de contruição](https://github.com/Dev-Help-Oficial/Blog/blob/main/CONTRIBUTING.md) para mais informações).
 
 ## Acesse o blog
 Por enquanto, nosso blog está hospedado em um domínio temporário pois ainda está em sua fase beta de desenvolvimento, porém já é possível encontrar alguns artigos no blog.
