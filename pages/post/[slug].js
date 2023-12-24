@@ -137,7 +137,16 @@ code {
         <title>Dev Help Blog - {frontmatter.title}</title>
       </Helmet>
       <div className="content">
-        <ReactMarkdown>{content}</ReactMarkdown>
+        <ReactMarkdown
+          components={{
+            a(props) {
+              const { node, ...rest } = props;
+              return <a title={props.href} target="_blank" rel="noopener noreferrer" className="link" {...rest} />;
+            },
+          }}
+        >
+          {content}
+        </ReactMarkdown>
       </div>
       <ScrollToTop />
     </div>
