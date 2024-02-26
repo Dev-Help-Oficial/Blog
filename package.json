@@ -16,7 +16,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.10",
     "@mui/material": "^5.15.11",
-    "dotenv": "^16.4.4",
+    "dotenv": "^16.4.5",
     "gray-matter": "^4.0.3",
     "next": "^14.1.0",
     "next-seo": "^6.4.0",
